@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title></title>
+               <meta charset="UTF-8">
+            <link rel="stylesheet" href="404page.css">
+            <link rel="stylesheet" href="../css/style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <header>
+                                    <div class="w3-top">
+                  <div class="w3-bar w3-white w3-card" id="myNavbar">
+                   <div class="extra">
+                    <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="../img/ciestra_logo.svg"> </a>
+                    <!-- Right-sided navbar links -->
+                    <div class="w3-right w3-hide-small">
+                      <a href="../index.html" class="w3-bar-item w3-button">HOME</a>
+                      <a href="#team" class="w3-bar-item w3-button">OUR ROOMS</a>
+                       <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-button" title="Notifications">PAGES <i class="fa fa-caret-down"></i></button>     
+                    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                      <a href="../bokonline/bookonline.html" class="w3-bar-item w3-button">Book Online</a>
+                      <a href="../amenites/amenites.html" class="w3-bar-item w3-button">Amenities</a>
+                      <a href="../sievece/sarvice.html" class="w3-bar-item w3-button">Services</a>
+                      <a href="../wat/what.html" class="w3-bar-item w3-button">What Our Guests Say</a>
+                      <a href="../Ciestra/Ciestra.html" class="w3-bar-item w3-button">About Ciestra</a>
+                    </div>
+                  </div>
+                 <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-button" title="Notifications">FEATURES <i class="fa fa-caret-down"></i></button>     
+                    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                      <a href="#" class="w3-bar-item w3-button">Link</a>
+                      <a href="#" class="w3-bar-item w3-button">Link</a>
+                      <a href="#" class="w3-bar-item w3-button">Link</a>
+                    </div>
+                  </div>
+
+     
+                      <a href="../niws/niws.html.html" class="w3-bar-item w3-button"> NEWS</a>
+                      <a href="../contect/contect.html" class="w3-bar-item w3-button"> CONTACT</a>
+                    </div>
+                    </div>
+                    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Sidebar on small screens when clicking the menu icon -->
+                <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+                  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+                  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+                  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+                  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+                  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+                  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+                </nav>
+
+
+
+                <script>
+                // Modal Image Gallery
+                function onClick(element) {
+                  document.getElementById("img01").src = element.src;
+                  document.getElementById("modal01").style.display = "block";
+                  var captionText = document.getElementById("caption");
+                  captionText.innerHTML = element.alt;
+                }
+
+
+                // Toggle between showing and hiding the sidebar when clicking the menu icon
+                var mySidebar = document.getElementById("mySidebar");
+
+                function w3_open() {
+                  if (mySidebar.style.display === 'block') {
+                    mySidebar.style.display = 'none';
+                  } else {
+                    mySidebar.style.display = 'block';
+                  }
+                }
+
+                // Close the sidebar with the close button
+                function w3_close() {
+                    mySidebar.style.display = "none";
+                }
+                </script>
+
+        </header>
+        <section class="chota">
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+            <h1 style="font-weight: 700; font-size: 50px;">404</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3 style="font-weight: 700;">Page Not Found</h3>
+            <br>
+           
+            <p style="font-size: 19px;">Unfortunately the page you were looking for could not be found.</p>
+            <br>
+            <form>
+                <label>
+                    <spa><input style="width: 400px;height: 50px; border: none; outline: none; font-size: 19px;" type="text" placeholder="search"> </span>
+                    <button style="width: 60px;height: 50px; border: none; background-color: white;"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </label>
+            </form>
+            <br>
+            <br>
+            <br>
+           <a class="byyt" href="#">BACK TO HOME</a>
+        </section>
+    </body>
+</html>

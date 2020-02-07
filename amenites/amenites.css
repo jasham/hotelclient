@@ -1,0 +1,133 @@
+.heder2{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding-top: 160px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.all-content{
+    width: 1100px;
+    height: auto;
+/*    background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+}
+.header-heading{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+.header-heading p{
+    width: 90%;
+  text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+}
+.header-heading h1{
+    font-weight: 700;
+    font-size: 40px;
+}
+/*..............................card................*/
+.thire-div{
+    width: 100%;
+height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card{
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.btn:hover{
+    text-decoration: none!important;
+    border-bottom: 5px solid #00ca4c!important;
+    transition: 1s!important;
+}
+/*/////////////////////////////////////////*/
+.footerBlock {
+display: flex;
+justify-content: center;
+border-top: 1px solid #ddd;
+padding: 5rem 0 3.75rem;
+}
+.mainFooter{
+display: flex;
+width: 91%;
+height: 400px;
+justify-content: center;
+align-items: center;
+}
+.divWrapper{
+width:100%;
+height: 70%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+.footerLogo, .socialMediaIcons, .menuItems, .copyRight{
+display: flex;
+width: 100%;
+justify-content: center;
+color: #;
+}
+.socialMedia{
+display: flex;
+width: 50%;
+justify-content: center;
+
+}
+.socialMediaIcons{
+list-style: none;
+justify-content: space-evenly;
+font-size: 20px;
+width: 60%;
+padding: 0%;
+margin: 0px 0px 0px 0px;
+}
+.socialMediaIcons i:hover{
+color: #00a43e;
+}
+.ul {
+list-style: none;
+}
+.fa-facebook-f,.fa-instagram, .fa-youtube, .fa-foursquare, .fa-tripadvisor{
+color: #4f4f4f;
+}
+.menuItemsList li{
+margin-left: 25px;
+}
+a{
+text-decoration: none;
+list-style: none;
+color: #00a43e;
+}
+a:hover{
+text-decoration: underline;
+}
+.menuItemsList{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+list-style: none !important;
+font-family: "Roboto",sans-serif;
+font-size: 14px;
+}
+.copyRight{
+font-family: "Roboto",sans-serif;
+line-height: 1.75;
+font-size: 12px;
+color: #7e7e7e;
+}
+.footerLogo img{
+    width: 30%;
+    height: 35%;
+}

@@ -1,0 +1,393 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="sif.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+                        <meta charset="utf-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1">
+                  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+                   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+                   <link rel="stylesheet" href="rsorces/ionicons-2.0.1.zip">
+                   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+                  <meta name="viewport" content="width=device-width, initial-scale=1">
+                  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+                  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+                   <meta charset="UTF-8">
+                <link rel="stylesheet" href="./css/responsiv.css">
+                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    </head>
+    <body>
+       
+          <div class="w3-top">
+            <div class="w3-bar w3-white w3-card" id="myNavbar">
+             <div class="extra">
+              <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="https://themes.getmotopress.com/ciestra/wp-content/uploads/sites/21/2018/08/ciestra_logo.svg"> </a>
+              <!-- Right-sided navbar links -->
+              <div class="w3-right w3-hide-small">
+                <a href="../index.html" class="w3-bar-item w3-button">HOME</a>
+                <a href="#team" class="w3-bar-item w3-button">OUR ROOMS</a>
+                 <div class="w3-dropdown-hover w3-hide-small">
+              <button class="w3-button" title="Notifications">PAGES <i class="fa fa-caret-down"></i></button>     
+              <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                <a href="#" class="w3-bar-item w3-button">Link</a>
+                <a href="#" class="w3-bar-item w3-button">Link</a>
+                <a href="#" class="w3-bar-item w3-button">Link</a>
+              </div>
+            </div>
+           <div class="w3-dropdown-hover w3-hide-small">
+              <button class="w3-button" title="Notifications">FEATURES <i class="fa fa-caret-down"></i></button>     
+              <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                <a href="../bokonline/bookonline.html" class="w3-bar-item w3-button">Book Online</a>
+                <a href="../amenites/amenites.html" class="w3-bar-item w3-button">Amenities</a>
+                <a href="../sievece/sarvice.html" class="w3-bar-item w3-button">Services</a>
+                <a href="../wat/what.html" class="w3-bar-item w3-button">What Our Guests Say</a>
+                <a href="../Ciestra/Ciestra.html" class="w3-bar-item w3-button">What Our Guests Say</a>
+              </div>
+            </div>
+
+
+                <a href="niws.html.html" class="w3-bar-item w3-button"> NEWS</a>
+                <a href="../contect/contect.html" class="w3-bar-item w3-button"> CONTACT</a>
+              </div>
+              </div>
+              <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+              <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Sidebar on small screens when clicking the menu icon -->
+          <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+            <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+            <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+            <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+            <a href="../contect/contect.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+          </nav>
+
+
+
+          <script>
+          // Modal Image Gallery
+          function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+          }
+
+
+          // Toggle between showing and hiding the sidebar when clicking the menu icon
+          var mySidebar = document.getElementById("mySidebar");
+
+          function w3_open() {
+            if (mySidebar.style.display === 'block') {
+              mySidebar.style.display = 'none';
+            } else {
+              mySidebar.style.display = 'block';
+            }
+          }
+
+          // Close the sidebar with the close button
+          function w3_close() {
+              mySidebar.style.display = "none";
+          }
+          </script>
+
+<section class="header">
+<!-- /////////////////////////////////////1//////////////////////////////////////// -->
+   <div class="main-div">
+            <div class="image-div">
+                <img src="https://themes.getmotopress.com/ciestra/wp-content/uploads/sites/21/2018/08/Depositphotos_3350807_original-1024x691.jpg">
+            </div>
+            <div class="content1">
+                <p>
+                <a href="#"><i class="fa fa-star-o" aria-hidden="true">Featured</i> </a> 
+                <a href="#">August 13, 2018</a>
+                <a href="#"><i class="fa fa-folder-o" aria-hidden="true">Activities</i> </a>
+                <a href="#">news</a>
+                <a href="#"><i class="fa fa-comment-o" aria-hidden="true">0</i></a>
+                </p>
+                <h2><a class="h2" href="#"> Secret Island Boat Tour is Just for You</a></h2>
+                <p class="p-3">You’ve probably already seen our activities? There are a lot of them and you can enjoy any. But today 
+                    we want to make a special accent on Island boat tours.
+                     Remember a book about Robinson Crusoe? You have a chance to experience a piece of his life on your own.</p>
+
+
+
+                     <a class="btn" href="#"><u>TAKE A TOUR</u></a>
+            </div>
+       
+        </div>
+  <!-- /////////////////////////////////////2/////////////////////////////////////// -->
+
+        <div class="main-div">
+            <div class="image-div">
+                <img src="https://themes.getmotopress.com/ciestra/wp-content/uploads/sites/21/2018/08/Depositphotos_3350807_original-1024x691.jpg">
+            </div>
+            <div class="content1">
+                <p>
+                <a href="#"><i class="fa fa-star-o" aria-hidden="true">Featured</i> </a> 
+                <a href="#">August 13, 2018</a>
+                <a href="#"><i class="fa fa-folder-o" aria-hidden="true">Activities</i> </a>
+                <a href="#">news</a>
+                <a href="#"><i class="fa fa-comment-o" aria-hidden="true">0</i></a>
+                </p>
+                <h2><a class="h2" href="#"> September in Punta Cana</a></h2>
+                <p class="p-3">September is a great time with a soft weather and lots of
+                     new activities. Moreover, we decrease our rates for rooms in a hotel for September,
+                     so you can enjoy the place and the price! Contact our team and we will direct you.</p>
+
+
+
+                     <a class="btn" href="#"><u>CONTINUE READING</u></a>
+            </div>
+       
+        </div>
+<!-- /////////////////////////////////////3//////////////////////////////////////// -->
+
+        <div class="main-div">
+            <div class="image-div">
+                <img src="https://themes.getmotopress.com/ciestra/wp-content/uploads/sites/21/2018/08/Depositphotos_3350807_original-1024x691.jpg">
+            </div>
+            <div class="content1">
+                <p>
+                <a href="#"><i class="fa fa-star-o" aria-hidden="true">Featured</i> </a> 
+                <a href="#">August 13, 2018</a>
+                <a href="#"><i class="fa fa-folder-o" aria-hidden="true">Activities</i> </a>
+                <a href="#">news</a>
+                <a href="#"><i class="fa fa-comment-o" aria-hidden="true">0</i></a>
+                </p>
+                <h2><a class="h2" href="#"> Secret Island Boat Tour is Just for You</a></h2>
+                <p class="p-3">You’ve probably already seen our activities? There are a lot of them and you can enjoy any. But today 
+                    we want to make a special accent on Island boat tours.
+                     Remember a book about Robinson Crusoe? You have a chance to experience a piece of his life on your own.</p>
+
+
+
+                     <a class="btn" href="#"><u>TAKE A TOUR</u></a>
+            </div>
+       
+        </div>
+<!-- /////////////////////////////////////4//////////////////////////////////////// -->
+
+        <div class="main-div">
+            <div class="image-div">
+                <img src="https://themes.getmotopress.com/ciestra/wp-content/uploads/sites/21/2018/08/Depositphotos_3350807_original-1024x691.jpg">
+            </div>
+            <div class="content1">
+                <p>
+                <a href="#"><i class="fa fa-star-o" aria-hidden="true">Featured</i> </a> 
+                <a href="#">August 13, 2018</a>
+                <a href="#"><i class="fa fa-folder-o" aria-hidden="true">Activities</i> </a>
+                <a href="#">news</a>
+                <a href="#"><i class="fa fa-comment-o" aria-hidden="true">0</i></a>
+                </p>
+                <h2><a class="h2" href="#"> Secret Island Boat Tour is Just for You</a></h2>
+                <p class="p-3">You’ve probably already seen our activities? There are a lot of them and you can enjoy any. But today 
+                    we want to make a special accent on Island boat tours.
+                     Remember a book about Robinson Crusoe? You have a chance to experience a piece of his life on your own.</p>
+
+
+
+                     <a class="btn" href="#"><u>TAKE A TOUR</u></a>
+            </div>
+       
+        </div>
+<!-- /////////////////////////////////////5//////////////////////////////////////// -->
+
+        <div class="main-div">
+            <div class="image-div">
+                <img src="https://themes.getmotopress.com/ciestra/wp-content/uploads/sites/21/2018/08/Depositphotos_3350807_original-1024x691.jpg">
+            </div>
+            <div class="content1">
+                <p>
+                <a href="#"><i class="fa fa-star-o" aria-hidden="true">Featured</i> </a> 
+                <a href="#">August 13, 2018</a>
+                <a href="#"><i class="fa fa-folder-o" aria-hidden="true">Activities</i> </a>
+                <a href="#">news</a>
+                <a href="#"><i class="fa fa-comment-o" aria-hidden="true">0</i></a>
+                </p>
+                <h2><a class="h2" href="#"> Secret Island Boat Tour is Just for You</a></h2>
+                <p class="p-3">You’ve probably already seen our activities? There are a lot of them and you can enjoy any. But today 
+                    we want to make a special accent on Island boat tours.
+                     Remember a book about Robinson Crusoe? You have a chance to experience a piece of his life on your own.</p>
+
+
+
+                     <a class="btn" href="#"><u>TAKE A TOUR</u></a>
+            </div>
+       
+        </div>
+<!-- /////////////////////////////////////6//////////////////////////////////////// -->
+
+        <div class="main-div">
+            <div class="image-div">
+                <img src="https://themes.getmotopress.com/ciestra/wp-content/uploads/sites/21/2018/08/Depositphotos_3350807_original-1024x691.jpg">
+            </div>
+            <div class="content1">
+                <p>
+                <a href="#"><i class="fa fa-star-o" aria-hidden="true">Featured</i> </a> 
+                <a href="#">August 13, 2018</a>
+                <a href="#"><i class="fa fa-folder-o" aria-hidden="true">Activities</i> </a>
+                <a href="#">news</a>
+                <a href="#"><i class="fa fa-comment-o" aria-hidden="true">0</i></a>
+                </p>
+                <h2><a class="h2" href="#"> Secret Island Boat Tour is Just for You</a></h2>
+                <p class="p-3">You’ve probably already seen our activities? There are a lot of them and you can enjoy any. But today 
+                    we want to make a special accent on Island boat tours.
+                     Remember a book about Robinson Crusoe? You have a chance to experience a piece of his life on your own.</p>
+
+
+
+                     <a class="btn" href="#"><u>TAKE A TOUR</u></a>
+            </div>
+       
+        </div>
+<!-- /////////////////////////////////////7//////////////////////////////////////// -->
+
+        <div class="main-div">
+            <div class="image-div">
+                <img src="https://themes.getmotopress.com/ciestra/wp-content/uploads/sites/21/2018/08/Depositphotos_3350807_original-1024x691.jpg">
+            </div>
+            <div class="content1">
+                <p>
+                <a href="#"><i class="fa fa-star-o" aria-hidden="true">Featured</i> </a> 
+                <a href="#">August 13, 2018</a>
+                <a href="#"><i class="fa fa-folder-o" aria-hidden="true">Activities</i> </a>
+                <a href="#">news</a>
+                <a href="#"><i class="fa fa-comment-o" aria-hidden="true">0</i></a>
+                </p>
+                <h2><a class="h2" href="#"> Secret Island Boat Tour is Just for You</a></h2>
+                <p class="p-3">You’ve probably already seen our activities? There are a lot of them and you can enjoy any. But today 
+                    we want to make a special accent on Island boat tours.
+                     Remember a book about Robinson Crusoe? You have a chance to experience a piece of his life on your own.</p>
+
+
+
+                     <a class="btn" href="#"><u>TAKE A TOUR</u></a>
+            </div>
+       
+        </div>
+<!-- /////////////////////////////////////8//////////////////////////////////////// -->
+
+        <div class="main-div">
+            <div class="image-div">
+                <img src="https://themes.getmotopress.com/ciestra/wp-content/uploads/sites/21/2018/08/Depositphotos_3350807_original-1024x691.jpg">
+            </div>
+            <div class="content1">
+                <p>
+                <a href="#"><i class="fa fa-star-o" aria-hidden="true">Featured</i> </a> 
+                <a href="#">August 13, 2018</a>
+                <a href="#"><i class="fa fa-folder-o" aria-hidden="true">Activities</i> </a>
+                <a href="#">news</a>
+                <a href="#"><i class="fa fa-comment-o" aria-hidden="true">0</i></a>
+                </p>
+                <h2><a class="h2" href="#"> Secret Island Boat Tour is Just for You</a></h2>
+                <p class="p-3">You’ve probably already seen our activities? There are a lot of them and you can enjoy any. But today 
+                    we want to make a special accent on Island boat tours.
+                     Remember a book about Robinson Crusoe? You have a chance to experience a piece of his life on your own.</p>
+
+
+
+                     <a class="btn" href="#"><u>TAKE A TOUR</u></a>
+            </div>
+       
+        </div>
+<!-- /////////////////////////////////////9//////////////////////////////////////// -->
+
+        <div class="main-div">
+            <div class="image-div">
+                <img src="https://themes.getmotopress.com/ciestra/wp-content/uploads/sites/21/2018/08/Depositphotos_3350807_original-1024x691.jpg">
+            </div>
+            <div class="content1">
+                <p>
+                <a href="#"><i class="fa fa-star-o" aria-hidden="true">Featured</i> </a> 
+                <a href="#">August 13, 2018</a>
+                <a href="#"><i class="fa fa-folder-o" aria-hidden="true">Activities</i> </a>
+                <a href="#">news</a>
+                <a href="#"><i class="fa fa-comment-o" aria-hidden="true">0</i></a>
+                </p>
+                <h2><a class="h2" href="#"> Secret Island Boat Tour is Just for You</a></h2>
+                <p class="p-3">You’ve probably already seen our activities? There are a lot of them and you can enjoy any. But today 
+                    we want to make a special accent on Island boat tours.
+                     Remember a book about Robinson Crusoe? You have a chance to experience a piece of his life on your own.</p>
+
+
+
+                     <a class="btn" href="#"><u>TAKE A TOUR</u></a>
+            </div>
+       
+        </div>
+<!-- /////////////////////////////////////10//////////////////////////////////////// -->
+
+        <div class="main-div">
+            <div class="image-div">
+                <img src="https://themes.getmotopress.com/ciestra/wp-content/uploads/sites/21/2018/08/Depositphotos_3350807_original-1024x691.jpg">
+            </div>
+            <div class="content1">
+                <p>
+                <a href="#"><i class="fa fa-star-o" aria-hidden="true">Featured</i> </a> 
+                <a href="#">August 13, 2018</a>
+                <a href="#"><i class="fa fa-folder-o" aria-hidden="true">Activities</i> </a>
+                <a href="#">news</a>
+                <a href="#"><i class="fa fa-comment-o" aria-hidden="true">0</i></a>
+                </p>
+                <h2><a class="h2" href="#"> Secret Island Boat Tour is Just for You</a></h2>
+                <p class="p-3">You’ve probably already seen our activities? There are a lot of them and you can enjoy any. But today 
+                    we want to make a special accent on Island boat tours.
+                     Remember a book about Robinson Crusoe? You have a chance to experience a piece of his life on your own.</p>
+
+
+
+                     <a class="btn" href="#"><u>TAKE A TOUR</u></a>
+            </div>
+       
+        </div>
+        <div class="footerBlock">
+            <div class="mainFooter">
+            <div class="divWrapper">
+            <div class="footerLogo"><img src="https://themes.getmotopress.com/ciestra/wp-content/uploads/sites/21/2018/08/ciestra_logo.svg"> </div>
+            <div class="socialMedia">
+            <ul class="socialMediaIcons">
+            <li> <a href="#"> <i class="fa fa-facebook-f" aria-hidden="true"></i></a> </li>
+            <li> <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i> </a> </li>
+            <li> <a href="#"> <i class="fa fa-youtube" aria-hidden="true"></i> </a> </li>
+            <li> <a href="#"> <i class="fa fa-foursquare" aria-hidden="true"></i></a> </li>
+            <li> <a href="#"> <i class="fa fa-tripadvisor" aria-hidden="true"></i></a></li>
+            </ul>
+            </div>
+            <div class="menuItems">
+            <ul class="menuItemsList">
+            <li> <a href="#" class="home" aria-hidden="true"> Home</a> </li>
+            <li> <a href="#" class="ourRooms" aria-hidden="true"> Our Rooms</a></li>
+            <li> <a href="#" class="pages" aria-hidden="true"> Pages </a> </li>
+            <li> <a href="#" class="features" aria-hidden="true"> Features</a> </li>
+            <li> <a href="#" class="news" aria-hidden="true"> News </a></li>
+            <li> <a href="#" class="contact" aria-hidden="true"> Contact</a></li>
+            </ul>
+            </div>
+            <div class="copyRight">Villa Ciestra © 2020 All Rights Reserved.</div>
+            </div>
+            </div>
+            </div>
+            </div>
+  
+</section>
+
+
+
+
+
+    </body>
+</html>

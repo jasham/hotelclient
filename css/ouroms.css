@@ -1,0 +1,235 @@
+.ourRoomsBodyOuter{
+display: flex;
+justify-content: center;
+}
+.ourRoomsBody{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 60px 0px;
+/ background-color: green; /
+width: 80%;
+height: auto;
+}
+.entry-title{
+width: 100%;
+margin: 0;
+word-wrap: break-word;
+clear: both;
+line-height: 1.4;
+font-weight: 900;
+color: #37383c;
+font-family: "Roboto",sans-serif;
+font-size: 39px;
+}
+.ourRoomsContentWrapper{
+width: 100%;
+height: 100%;
+/ background-color: rebeccapurple; /
+}
+.ourRoomsBodyContent{
+width: 100%;
+max-height: 568px;
+padding-top: 150px;
+display: flex;
+flex-direction: row;
+}
+.topDivleft{
+/ background-color:red; /
+}
+.imageSlides img{
+margin-top: -8%;
+margin-left: -8%;
+
+}
+.imageSlides{
+height: 535px;
+width: 535px;
+position: relative;
+background-color: #edf6fc;
+}
+.room-description-wrapper{
+padding: 0px 0px 0px 60px;
+}
+.mphb-room-type-title{
+color: #37383c;
+font-family: "Roboto",sans-serif;
+font-size: 25px;
+}
+.mphb-room-type-title a {
+text-decoration: none !important;
+}
+.mphb-room-type-title a:hover{
+color: #00a43e;
+}
+.ourRoomsImageParagraph {
+color: #4f4f4f;
+font-family: roboto, sans-serif;
+margin: 0px 0px 24px;
+font-size: 16px;
+}
+.mphb-loop-room-type-attributes{
+list-style: none;
+padding: 0px !important;
+font-size: 14px;
+color: #7e7e7e;
+}
+.tableDetails{
+display: inline-block;
+}
+.mphb-attribute-title{
+float: left;
+width: 60px;
+}
+.mphb-attribute-value{
+padding-left: 25px;
+}
+.mphb-regular-price {
+margin: 1.875rem 0;
+font-size: 16px;
+font-size: 1rem;
+font-family: roboto, sans-serif;
+color: #4f4f4f;
+}
+.mphb-regular-price .mphb-price {
+font-size: 21px;
+font-size: 1.3125rem;
+font-weight: 700;
+margin: 0 .1rem;
+font-family: roboto, sans-serif;
+color: #4f4f4f;
+}
+.mphb-price-period {
+border-bottom: 1px dashed;
+cursor: help;
+}
+.button, button, input[type=button], input[type=reset], input[type=submit] {
+border: none;
+background: #00ca4c;
+border-radius: 0;
+color: #fff;
+font-size: 14px;
+font-size: .875rem;
+line-height: 1;
+padding: 1.28571em 1.5625em;
+text-transform: uppercase;
+text-decoration: none;
+letter-spacing: 1px;
+font-weight: 900;
+-webkit-transition: all .3s ease;
+transition: all .3s ease;
+white-space: normal;
+}
+.bookBlock{
+display: flex;
+flex-direction: row;
+height: auto;
+width: 60%;
+align-items: center;
+justify-content: space-between;
+}
+.mphb-view-details-button {
+background: 0 0;
+color: #00ca4c;
+border: 0;
+-webkit-box-shadow: none;
+box-shadow: none;
+padding-left: 0;
+padding-right: 0;
+display: block;
+position: relative;
+font-weight: 900;
+text-transform: uppercase;
+font-family: "Roboto",sans-serif;
+}
+a.button.mphb-view-details-button{
+text-decoration: none;
+}
+.mphb-view-details-button::after{
+content: '';
+display: block;
+position: absolute;
+bottom: 10px;
+left: 0;
+right: 0;
+height: 2px;
+background: #00ca4c;
+-webkit-transition: all .3s ease;
+transition: all .3s ease;
+}
+
+/ ******Footer******** /
+.footerBlock {
+display: flex;
+justify-content: center;
+border-top: 1px solid #ddd;
+padding: 0px;
+}
+.mainFooter{
+display: flex;
+width: 91%;
+height: 400px;
+justify-content: center;
+align-items: center;
+}
+.divWrapper{
+width:100%;
+height: 70%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+.footerLogo, .socialMediaIcons, .menuItems, .copyRight{
+display: flex;
+width: 100%;
+justify-content: center;
+}
+.socialMedia{
+display: flex;
+width: 50%;
+justify-content: center;
+
+}
+.socialMediaIcons{
+list-style: none;
+justify-content: space-evenly;
+font-size: 20px;
+width: 60%;
+padding: 0%;
+margin: 0px 0px 0px 0px;
+}
+.socialMediaIcons i:hover{
+color: #00a43e;
+}
+.ul {
+list-style: none;
+}
+.fa-facebook-f,.fa-instagram, .fa-youtube, .fa-foursquare, .fa-tripadvisor{
+color: #4f4f4f;
+}
+.menuItemsList li{
+margin-left: 25px;
+}
+a{
+text-decoration: none;
+list-style: none;
+color: #00a43e;
+}
+a:hover{
+text-decoration: underline;
+}
+.menuItemsList{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+list-style: none !important;
+font-family: "Roboto",sans-serif;
+font-size: 14px;
+}
+.copyRight{
+font-family: "Roboto",sans-serif;
+line-height: 1.75;
+font-size: 12px;
+color: #7e7e7e;
+}

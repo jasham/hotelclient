@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="contect.css">
+<link rel="stylesheet" href="../css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="myPage">
+        <div class="w3-top">
+                <div class="w3-bar w3-white w3-card" id="myNavbar">
+                 <div class="extra">
+                  <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="../img/ciestra_logo.svg"> </a>
+                  <!-- Right-sided navbar links -->
+                  <div class="w3-right w3-hide-small">
+                    <a href="../index.html" class="w3-bar-item w3-button">HOME</a>
+                    <a href="#team" class="w3-bar-item w3-button">OUR ROOMS</a>
+                     <div class="w3-dropdown-hover w3-hide-small">
+                  <button class="w3-button" title="Notifications">PAGES <i class="fa fa-caret-down"></i></button>     
+                  <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="../bokonline/bookonline.html" class="w3-bar-item w3-button">Book Online</a>
+                    <a href="../amenites/amenites.html" class="w3-bar-item w3-button">Amenities</a>
+                    <a href="../sievece/sarvice.html" class="w3-bar-item w3-button">Services</a>
+                    <a href="../wat/what.html" class="w3-bar-item w3-button">What Our Guests Say</a>
+                    <a href="../Ciestra/Ciestra.html" class="w3-bar-item w3-button">What Our Guests Say</a>
+                  </div>
+                </div>
+               <div class="w3-dropdown-hover w3-hide-small">
+                  <button class="w3-button" title="Notifications">FEATURES <i class="fa fa-caret-down"></i></button>     
+                  <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="#" class="w3-bar-item w3-button">Link</a>
+                    <a href="#" class="w3-bar-item w3-button">Link</a>
+                    <a href="#" class="w3-bar-item w3-button">Link</a>
+                  </div>
+                </div>
+              
+                   
+                    <a href="../niws/niws.html.html" class="w3-bar-item w3-button"> NEWS</a>
+                    <a href="contect.html" class="w3-bar-item w3-button"> CONTACT</a>
+                  </div>
+                  </div>
+                  <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+              
+                  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </div>
+              </div>
+
+              <script>
+                    // Modal Image Gallery
+                    function onClick(element) {
+                      document.getElementById("img01").src = element.src;
+                      document.getElementById("modal01").style.display = "block";
+                      var captionText = document.getElementById("caption");
+                      captionText.innerHTML = element.alt;
+                    }
+                    
+                    
+                    // Toggle between showing and hiding the sidebar when clicking the menu icon
+                    var mySidebar = document.getElementById("mySidebar");
+                    
+                    function w3_open() {
+                      if (mySidebar.style.display === 'block') {
+                        mySidebar.style.display = 'none';
+                      } else {
+                        mySidebar.style.display = 'block';
+                      }
+                    }
+                    
+                    // Close the sidebar with the close button
+                    function w3_close() {
+                        mySidebar.style.display = "none";
+                    }
+                    </script>
+                    
+                    <section class="colum">
+                      <div class="map-content">
+                          <div class="map-img">
+                              <div id="googleMap" style="width:100%;height:400px;"></div>
+                          </div>
+                          <div class="content-map">
+                              <p>Spacious and bright with a Caribbean touch style, our resort accommodations are a 230 sq.m. with both apartments and houses available. Villa is located in the Residential Los Corales where there are a lot of different restaurants and also, in only 5 minutes walking, you’ll be in the center with all attractions such restaurants, supermarkets, pharmacy, money exchange and many more!
+                                </p>
+                                <br>
+                              <a href="#"><i class="fa fa-map-marker" aria-hidden="true">
+                          <span>Bavaro, Punta Cana, La Altagracia Province, Dominican Republic</span>
+                              </i></a>
+                              <a href="#"><i class="fa fa-mobile" aria-hidden="true">
+                          <span>   +1 (954) 456 6789</span>
+                              </i></a>
+                              <a href="#"><i class="fa fa-at" aria-hidden="true">
+                           <span>  info@ciestra.com</span>
+                              </i></a>
+                              <h1>Leave us a message</h1>
+                              
+                              <form class="input-forom">
+                                  <label>
+                                      name
+                                      <br>
+                                      <span>
+                                          <input type="text">
+                                      </span>
+                                  </label>
+                                  <br>
+                                   <label>
+                                     Email:
+                                      <br>
+                                      <span>
+                                          <input type="text">
+                                      </span>
+                                  </label>
+                                  <br>
+                                   <label>
+                                   Subject:
+                                      <br>
+                                      <span>
+                                          <input type="text">
+                                      </span>
+                                  </label>
+                                         <label><br>
+                                   Subject:
+                                      <br>
+                                      <span>
+                                          <textarea style="width: 400px;" class="big-input" aria-label="With textarea"></textarea>
+                                      </span>
+                                  </label>
+                                  <a class="send" href="#">SEND MASSIGE</a>
+                              </form>
+                          </div>
+                      </div>
+                      <div class="footerBlock">
+<div class="mainFooter">
+<div class="divWrapper">
+<div class="footerLogo"><img src="../img/ciestra_logo.svg"> </div>
+<div class="socialMedia">
+<ul class="socialMediaIcons">
+<li> <a href="#"> <i class="fa fa-facebook-f" aria-hidden="true"></i></a> </li>
+<li> <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i> </a> </li>
+<li> <a href="#"> <i class="fa fa-youtube" aria-hidden="true"></i> </a> </li>
+<li> <a href="#"> <i class="fa fa-foursquare" aria-hidden="true"></i></a> </li>
+<li> <a href="#"> <i class="fa fa-tripadvisor" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+<div class="menuItems">
+<ul class="menuItemsList">
+<li> <a href="#" class="home" aria-hidden="true"> Home</a> </li>
+<li> <a href="#" class="ourRooms" aria-hidden="true"> Our Rooms</a></li>
+<li> <a href="#" class="pages" aria-hidden="true"> Pages </a> </li>
+<li> <a href="#" class="features" aria-hidden="true"> Features</a> </li>
+<li> <a href="#" class="news" aria-hidden="true"> News </a></li>
+<li> <a href="#" class="contact" aria-hidden="true"> Contact</a></li>
+</ul>
+</div>
+<div class="copyRight">Villa Ciestra © 2020 All Rights Reserved.</div>
+</div>
+</div>
+</div>
+<!--</div>-->
+                    </section>
+                    
+<!--//////////////////////////////////////////////////map script                    ///////////////////////////////-->
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+
+
+</body>
+</html>

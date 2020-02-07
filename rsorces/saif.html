@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./css/sif.css">
+<link rel="stylesheet" href="../css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="myPage">
+        <div class="w3-top">
+                <div class="w3-bar w3-white w3-card" id="myNavbar">
+                 <div class="extra">
+                  <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="../img/ciestra_logo.svg"> </a>
+                  <!-- Right-sided navbar links -->
+                  <div class="w3-right w3-hide-small">
+                    <a href="#about" class="w3-bar-item w3-button">HOME</a>
+                    <a href="#team" class="w3-bar-item w3-button">OUR ROOMS</a>
+                     <div class="w3-dropdown-hover w3-hide-small">
+                  <button class="w3-button" title="Notifications">PAGES <i class="fa fa-caret-down"></i></button>     
+                  <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="#" class="w3-bar-item w3-button">Link</a>
+                    <a href="#" class="w3-bar-item w3-button">Link</a>
+                    <a href="#" class="w3-bar-item w3-button">Link</a>
+                  </div>
+                </div>
+               <div class="w3-dropdown-hover w3-hide-small">
+                  <button class="w3-button" title="Notifications">FEATURES <i class="fa fa-caret-down"></i></button>     
+                  <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="#" class="w3-bar-item w3-button">Link</a>
+                    <a href="#" class="w3-bar-item w3-button">Link</a>
+                    <a href="#" class="w3-bar-item w3-button">Link</a>
+                  </div>
+                </div>
+              
+                   
+                    <a href="#pricing" class="w3-bar-item w3-button"> NEWS</a>
+                    <a href="#contact" class="w3-bar-item w3-button"> CONTACT</a>
+                  </div>
+                  </div>
+                  <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+              
+                  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </div>
+              </div>
+
+              <script>
+                    // Modal Image Gallery
+                    function onClick(element) {
+                      document.getElementById("img01").src = element.src;
+                      document.getElementById("modal01").style.display = "block";
+                      var captionText = document.getElementById("caption");
+                      captionText.innerHTML = element.alt;
+                    }
+                    
+                    
+                    // Toggle between showing and hiding the sidebar when clicking the menu icon
+                    var mySidebar = document.getElementById("mySidebar");
+                    
+                    function w3_open() {
+                      if (mySidebar.style.display === 'block') {
+                        mySidebar.style.display = 'none';
+                      } else {
+                        mySidebar.style.display = 'block';
+                      }
+                    }
+                    
+                    // Close the sidebar with the close button
+                    function w3_close() {
+                        mySidebar.style.display = "none";
+                    }
+                    </script>
+                    
+
+
+
+
+
+
+</body>
+</html>

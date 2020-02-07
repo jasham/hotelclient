@@ -1,0 +1,232 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+            <link rel="stylesheet" href="amenites.css">
+            <link rel="stylesheet" href="../css/style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+                           <div class="w3-top">
+                  <div class="w3-bar w3-white w3-card" id="myNavbar">
+                   <div class="extra">
+                    <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="../img/ciestra_logo.svg"> </a>
+                    <!-- Right-sided navbar links -->
+                    <div class="w3-right w3-hide-small">
+                      <a href="../index.html" class="w3-bar-item w3-button">HOME</a>
+                      <a href="#team" class="w3-bar-item w3-button">OUR ROOMS</a>
+                       <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-button" title="Notifications">PAGES <i class="fa fa-caret-down"></i></button>     
+                    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                      <a href="../bokonline/bookonline.html" class="w3-bar-item w3-button">Book Online</a>
+                      <a href="../amenites/amenites.html" class="w3-bar-item w3-button">Amenities</a>
+                      <a href="../sievece/sarvice.html" class="w3-bar-item w3-button">Services</a>
+                      <a href="../wat/what.html" class="w3-bar-item w3-button">What Our Guests Say</a>
+                      <a href="../Ciestra/Ciestra.html" class="w3-bar-item w3-button">About Ciestra</a>
+                    </div>
+                  </div>
+                 <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-button" title="Notifications">FEATURES <i class="fa fa-caret-down"></i></button>     
+                    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                      <a href="#" class="w3-bar-item w3-button">Link</a>
+                      <a href="#" class="w3-bar-item w3-button">Link</a>
+                      <a href="#" class="w3-bar-item w3-button">Link</a>
+                    </div>
+                  </div>
+
+     
+                      <a href="../niws/niws.html.html" class="w3-bar-item w3-button"> NEWS</a>
+                      <a href="../contect/contect.html" class="w3-bar-item w3-button"> CONTACT</a>
+                    </div>
+                    </div>
+                    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Sidebar on small screens when clicking the menu icon -->
+                <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+                  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+                  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+                  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+                  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+                  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+                  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+                </nav>
+
+
+
+                <script>
+                // Modal Image Gallery
+                function onClick(element) {
+                  document.getElementById("img01").src = element.src;
+                  document.getElementById("modal01").style.display = "block";
+                  var captionText = document.getElementById("caption");
+                  captionText.innerHTML = element.alt;
+                }
+
+
+                // Toggle between showing and hiding the sidebar when clicking the menu icon
+                var mySidebar = document.getElementById("mySidebar");
+
+                function w3_open() {
+                  if (mySidebar.style.display === 'block') {
+                    mySidebar.style.display = 'none';
+                  } else {
+                    mySidebar.style.display = 'block';
+                  }
+                }
+
+                // Close the sidebar with the close button
+                function w3_close() {
+                    mySidebar.style.display = "none";
+                }
+                </script>
+                
+                
+<!--                //////////////////////////////////////////////////-->
+    
+    
+    <section class="heder2">
+        <div class="all-content">
+            <div class="header-heading">
+                <h1>Magnificent Amenities</h1>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>We offer lots of amenities: free internet access, sun launchers and pool towels, direct beach access and more.
+You’ll have everything for short and long stays, for business and entertainment.</p>
+            </div>
+            <div class="thire-div">
+              <div class="carc1" style="width: 23rem; height: 100%; border: 4px solid #8e8d8d;">
+               <div class="card" style="width: 23rem; height: 50%; padding: 0px!important">
+                  <img class="card-img-top" style="width: 97.8%; height: 100%; background-size: cover;margin: 0px!important" src="../img/about.jpg" alt="Card image cap">
+                  <div class="card-body" style="width: 100%; height: 50%; padding-left: 30px;" >
+                    <h4 class="card-title" style="font-weight: 500;">Swimming Pool</h4>
+                    <p class="card-text" style="width: 100%; font-weight: 500!important; word-spacing: 1px; font-size: 18px;">The 15-metre exercise pool is delightful to sit in overlooking the ocean. Cool down in the crystal clear pool, enjoy marvels of Punta Cana.</p>
+                    <br>
+                    
+                    <a href="#" class="btn btn-primary" style="border-bottom: 2px solid #00ca4c; padding-bottom: 5px; color:#00ca4c!important;">READ MORE</a>
+                  </div>
+                </div>
+                
+            </div>
+                          <div class="carc1" style="width: 23rem; height: 100%; border: 4px solid #8e8d8d;">
+               <div class="card" style="width: 23rem; height: 50%; padding: 0px!important">
+                  <img class="card-img-top" style="width: 97.8%; height: 100%; background-size: cover;margin: 0px!important" src="../img/about.jpg" alt="Card image cap">
+                  <div class="card-body" style="width: 100%; height: 50%; padding-left: 30px;" >
+                    <h4 class="card-title" style="font-weight: 500;">Swimming Pool</h4>
+                    <p class="card-text" style="width: 100%; font-weight: 500!important; word-spacing: 1px; font-size: 18px;">The 15-metre exercise pool is delightful to sit in overlooking the ocean. Cool down in the crystal clear pool, enjoy marvels of Punta Cana.</p>
+                    <br>
+                    
+                    <a href="#" class="btn btn-primary" style="border-bottom: 2px solid #00ca4c; padding-bottom: 5px; color:#00ca4c!important;">READ MORE</a>
+                  </div>
+                </div>
+                
+            </div>
+                         <div class="carc1" style="width: 23rem; height: 100%; border: 4px solid #8e8d8d;">
+               <div class="card" style="width: 23rem; height: 50%; padding: 0px!important">
+                  <img class="card-img-top" style="width: 97.8%; height: 100%; background-size: cover;margin: 0px!important" src="../img/about.jpg" alt="Card image cap">
+                  <div class="card-body" style="width: 100%; height: 50%; padding-left: 30px;" >
+                    <h4 class="card-title" style="font-weight: 500;">Swimming Pool</h4>
+                    <p class="card-text" style="width: 100%; font-weight: 500!important; word-spacing: 1px; font-size: 18px;">The 15-metre exercise pool is delightful to sit in overlooking the ocean. Cool down in the crystal clear pool, enjoy marvels of Punta Cana.</p>
+                    <br>
+                    
+                    <a href="#" class="btn btn-primary" style="border-bottom: 2px solid #00ca4c; padding-bottom: 5px; color:#00ca4c!important;">READ MORE</a>
+                  </div>
+                </div>
+                
+            </div>
+
+            </div>
+            <br>
+            <br>
+               <div class="thire-div">
+              <div class="carc1" style="width: 23rem; height: 100%; border: 4px solid #8e8d8d;">
+               <div class="card" style="width: 23rem; height: 50%; padding: 0px!important">
+                  <img class="card-img-top" style="width: 97.8%; height: 100%; background-size: cover;margin: 0px!important" src="../img/about.jpg" alt="Card image cap">
+                  <div class="card-body" style="width: 100%; height: 50%; padding-left: 30px;" >
+                    <h4 class="card-title" style="font-weight: 500;">Swimming Pool</h4>
+                    <p class="card-text" style="width: 100%; font-weight: 500!important; word-spacing: 1px; font-size: 18px;">The 15-metre exercise pool is delightful to sit in overlooking the ocean. Cool down in the crystal clear pool, enjoy marvels of Punta Cana.</p>
+                    <br>
+                    
+                    <a href="#" class="btn btn-primary" style="border-bottom: 2px solid #00ca4c; padding-bottom: 5px; color:#00ca4c!important;">READ MORE</a>
+                  </div>
+                </div>
+                
+            </div>
+                          <div class="carc1" style="width: 23rem; height: 100%; border: 4px solid #8e8d8d;">
+               <div class="card" style="width: 23rem; height: 50%; padding: 0px!important">
+                  <img class="card-img-top" style="width: 97.8%; height: 100%; background-size: cover;margin: 0px!important" src="../img/about.jpg" alt="Card image cap">
+                  <div class="card-body" style="width: 100%; height: 50%; padding-left: 30px;" >
+                    <h4 class="card-title" style="font-weight: 500;">Swimming Pool</h4>
+                    <p class="card-text" style="width: 100%; font-weight: 500!important; word-spacing: 1px; font-size: 18px;">The 15-metre exercise pool is delightful to sit in overlooking the ocean. Cool down in the crystal clear pool, enjoy marvels of Punta Cana.</p>
+                    <br>
+                    
+                    <a href="#" class="btn btn-primary" style="border-bottom: 2px solid #00ca4c; padding-bottom: 5px; color:#00ca4c!important;">READ MORE</a>
+                  </div>
+                </div>
+                
+            </div>
+                         <div class="carc1" style="width: 23rem; height: 100%; border: 4px solid #8e8d8d;">
+               <div class="card" style="width: 23rem; height: 50%; padding: 0px!important">
+                  <img class="card-img-top" style="width: 97.8%; height: 100%; background-size: cover;margin: 0px!important" src="../img/about.jpg" alt="Card image cap">
+                  <div class="card-body" style="width: 100%; height: 50%; padding-left: 30px;" >
+                    <h4 class="card-title" style="font-weight: 500;">Swimming Pool</h4>
+                    <p class="card-text" style="width: 100%; font-weight: 500!important; word-spacing: 1px; font-size: 18px;">The 15-metre exercise pool is delightful to sit in overlooking the ocean. Cool down in the crystal clear pool, enjoy marvels of Punta Cana.</p>
+                    <br>
+                    
+                    <a href="#" class="btn btn-primary" style="border-bottom: 2px solid #00ca4c; padding-bottom: 5px; color:#00ca4c!important;">READ MORE</a>
+                  </div>
+                </div>
+                
+            </div>
+
+            </div>
+
+        </div>
+<!--        ./////////////////////////////////////////-->
+        <div class="footerBlock">
+            <div class="mainFooter">
+            <div class="divWrapper">
+            <div class="footerLogo"><img src="../img/ciestra_logo.svg"> </div>
+            <div class="socialMedia">
+            <ul class="socialMediaIcons">
+            <li> <a href="#"> <i class="fa fa-facebook-f" aria-hidden="true"></i></a> </li>
+            <li> <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i> </a> </li>
+            <li> <a href="#"> <i class="fa fa-youtube" aria-hidden="true"></i> </a> </li>
+            <li> <a href="#"> <i class="fa fa-foursquare" aria-hidden="true"></i></a> </li>
+            <li> <a href="#"> <i class="fa fa-tripadvisor" aria-hidden="true"></i></a></li>
+            </ul>
+            </div>
+            <div class="menuItems">
+            <ul class="menuItemsList">
+            <li> <a href="#" class="home" aria-hidden="true"> Home</a> </li>
+            <li> <a href="#" class="ourRooms" aria-hidden="true"> Our Rooms</a></li>
+            <li> <a href="#" class="pages" aria-hidden="true"> Pages </a> </li>
+            <li> <a href="#" class="features" aria-hidden="true"> Features</a> </li>
+            <li> <a href="#" class="news" aria-hidden="true"> News </a></li>
+            <li> <a href="#" class="contact" aria-hidden="true"> Contact</a></li>
+            </ul>
+            </div>
+            <div class="copyRight">Villa Ciestra © 2020 All Rights Reserved.</div>
+            </div>
+            </div>
+            </div>
+            
+    </section>
+    
+    
+    
+    
+
+    </body>
+</html>
